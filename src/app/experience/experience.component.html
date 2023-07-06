@@ -1,1 +1,41 @@
-<p>experience works!</p>
+<!-- <h3>Experience</h3>
+<div class="experience">
+  <h4>Atades, Zaragoza/Spain</h4>
+  <p>Mentor | October 2017 - August 2018</p>
+  <ul>
+    <li>Collaborated on a large team of dedicated individuals at Leisure and Entertainment Club Los Tigres, which aimed to enhance the quality of life for people with intellectual disabilities. The team consisted of over 30 members, and as part of my role, I regularly mentored and provided support to a diverse group disabled students, offering guidance and assistance to help them participate in various activities such as sports, theater, dance, trips and camping. </li>
+  </ul>
+</div>
+
+<div class="experience">
+    <h4> Gokkusagi Special Education and Rehabilitation Center, Turkiye</h4>
+    <p> Assistant Manager| September 2016 - September 2017</p>
+    <ul>
+      <li>Prepared detailed monthly performance reports by collecting and analyzing data.</li>
+      <li>Produced monthly performance reports for school management, driving strategic decision making for enhanced organizational performance.</li>
+      <li>Collaborated closely with parents of handicapped children, establishing effective communication channels to understand their concerns and goals for their child’s education and development, providing necessary support and guidance. </li>
+    </ul>
+  </div>
+
+  <div class="experience">
+    <h4> Yakin Ilgi Special Education and Rehabilitation Center, Turkiye        </h4>
+    <p> Manager| August 2015 - December 2015</p>
+    <ul>
+      <li>Planned and coordinated school schedules for optimal resource utilization, including timetables, staff allocation, and student assignments.</li>
+      <li>Managed school discipline to ensure student safety. </li>
+      <li>Organized administrative tasks, managed resources, and optimized workflow to enhance productivity and overall effectiveness.</li>
+    </ul>
+  </div> -->
+
+  <div class="experience">
+    <div *ngFor="let experience of experiences" class="experience-item">
+      <h4>{{ experience.company }}</h4>
+      <p>{{ experience.title }} | {{ experience.duration }}</p>
+      <ul>
+        <li *ngFor="let responsibility of experience.responsibilities">
+          {{ responsibility }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

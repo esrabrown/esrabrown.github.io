@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-
+  email: string = 'esra.brown@hotmail.com';
+  linkedIn: string = 'https://www.linkedin.com/in/esrabrown';
+  github: string = 'https://github.com/esrabrown';
 }
+
