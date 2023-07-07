@@ -7,6 +7,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+  menuItems: MenuItem[] = [
+    { label: 'About', link: '/about' },
+    { label: 'Contact', link: '/contact' },
+    { label: 'Resume', link: '/resume' },
+    { label: 'Skills', link: '/skills' }
+  ];
   resumeUrl: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
@@ -14,3 +20,7 @@ export class MenuComponent {
   }
 }
 
+interface MenuItem {
+  label: string;
+  link: string;
+}

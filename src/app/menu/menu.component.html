@@ -1,6 +1,7 @@
 <nav class="menu-container">
     <ul>
-      <li>
+      <li *ngFor="let menuItem of menuItems">
+        <a [routerLink]="menuItem.link" routerLinkActive="active">{{ menuItem.label }}</a>
         <a [href]="resumeUrl" target="_blank">Resume</a>
       </li>
     </ul>
