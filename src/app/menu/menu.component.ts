@@ -8,16 +8,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class MenuComponent {
   menuItems: MenuItem[] = [
+    { label: 'Home', link: '/home' },
     { label: 'About', link: '/about' },
-    { label: 'Contact', link: '/contact' },
-    { label: 'Resume', link: '/resume' },
-    { label: 'Skills', link: '/skills' }
+    { label: 'Skills', link: '/skills' },
+    { label: 'Projects', link:'/projects'},
+    { label: 'Contact', link: '/contact' }
   ];
-  resumeUrl: SafeResourceUrl;
-
-  constructor(private sanitizer: DomSanitizer) {
-    this.resumeUrl = this.sanitizer.bypassSecurityTrustResourceUrl('assets/resume.pdf');
-  }
 }
 
 interface MenuItem {

@@ -1,9 +1,23 @@
 <nav class="menu-container">
-    <ul>
-      <li *ngFor="let menuItem of menuItems">
-        <a [routerLink]="menuItem.link" routerLinkActive="active">{{ menuItem.label }}</a>
-        <a [href]="resumeUrl" target="_blank">Resume</a>
-      </li>
-    </ul>
-  </nav>
-  
+  <ul>
+    <li>
+      <a routerLink="/" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </li>
+    <li>
+      <a routerLink="/skills" routerLinkActive="active">Skills</a>
+    </li>
+    <li>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+    <li>
+      <a href="/assets/resume.pdf" target="_blank">Resume</a>
+
+    </li>
+  </ul>
+</nav>
