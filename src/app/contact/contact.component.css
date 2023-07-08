@@ -1,11 +1,19 @@
+.body {
+  background-color: #333;
+  margin-top: 10%;
+}
+
+
 .contact-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    color: white;
   }
   
   h2 {
     text-align: center;
+    color: #ffcc00;
   }
   
   .contact-info {
@@ -14,5 +22,9 @@
   
   .contact-info p {
     margin: 0;
+  }
+
+  .contact-info a {
+    color: #ffcc00;
   }
   

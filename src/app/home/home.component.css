@@ -1,19 +1,23 @@
 .header {
-  text-align: center;
-  color: #fff;
-  animation: mymove 5s infinite;
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  transform: translateX(-50%);
+  text-align: justify;
 }
 
 .header__title {
-  font-size: 36px;
+  font-size: 45px;
+  color: #fff;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
   
-  .subtitle {
-    font-size: 24px;
-    font-weight: normal;
+  .header__subtitle {
+    color: #ffcc00;
+    font-size: 30px;
+    font-weight: bold;
     opacity: 0.8;
   }
   
@@ -25,6 +29,11 @@
   .header__subtitle:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+  }
+
+  .header p{
+    font-size: 20px;
+    color: #fff;
   }
 
  
@@ -40,29 +49,33 @@
    }
 
 
-  @media (max-width: 768px) {
-    .header {
-      padding: 20px;
-    }
-  
-    .header__title {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-  
-    .header__subtitle {
-      font-size: 20px;
-    }
-  
-    .image-container {
-      background-size: contain;
+   .work_img{
+    float: right;
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 15%;
+    max-width: 100%;
+    min-height: auto;
+   }
 
-    }
-  
-    .myDIV {
-      padding-bottom: 25%;
-    }
-  }
-  
+   .work_img:hover{
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite;
+   }
 
-  
+   @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+   
