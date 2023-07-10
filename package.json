@@ -18,7 +18,12 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@types/three": "^0.153.0",
     "rxjs": "~7.8.0",
+    "simplex-noise": "^4.0.1",
+    "three": "^0.154.0",
+    "three-orbitcontrols": "^2.110.3",
+    "three-stdlib": "^2.23.13",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
