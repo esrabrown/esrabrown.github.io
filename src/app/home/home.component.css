@@ -71,6 +71,17 @@ h2 {
   text-align: justify;
 }
 
+
+h1:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 .cursor {
   position: fixed;
   background: #2128bd;
