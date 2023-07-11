@@ -28,4 +28,16 @@ export class HomeComponent implements OnInit {
       });
     });
   }
+
+  sendEmail(): void {
+    const subject = 'Hiring request';
+    const body = 'I\'m interested in hiring you. Please contact me.';
+    const emailAddress = 'esra.brown@ehotmail.com';
+
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+
+
+
 }
