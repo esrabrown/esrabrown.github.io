@@ -1,82 +1,320 @@
-body {
-  font-family: Montserrat, sans-serif;
-  font-weight: 900;
+:host {
+  --hex-width: 100px; 
+  --hex-between: 10px;
   
-  &, * {
-    cursor: none;
-  }
+  --hex-height: calc(var(--hex-width) / 1.73);
+  --hex-margin: calc(var(--hex-width) / 2);
+  --hex-border: calc(var(--hex-margin) / 1.73);
+  --hex-transition: all .2s ease;
+  
+  --color-hex-default: #000000;
+  --color-hex-hover:   #FFFFFF;
+  --color-angular:     #DD0031;
+  --color-atom:        #66595C;
+  --color-bootstrap:   #563D7C;
+  --color-circleci:    #343434;
+  --color-css:         #1572B6;
+  --color-git:         #F14E32;
+  --color-springboot:  #614c86;
+  --color-haskell:     #5D4F85;
+  --color-html:        #E34F26;
+  --color-javascript:  #F7DF1E;
+  --color-github:      #f56a51;
+  --color-python:      #3776AB;
+  --color-rails:       #CC0000;
+  --color-sass:        #CC6699;
+  --color-vuejs:       #4FC08D;
+  --color-java:     #343434;
 }
 
-.shapes {
+/* Hexagons */
+.hexagon-container {
+  display: grid;
+  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+  grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
+  grid-gap: var(--hex-between) var(--hex-between);
+  padding-bottom: var(--hex-border);
+}
+
+.hexagon {
+  align-items: center;
+  background-color: var(--color-hex-default);
+  cursor: pointer;
+  display: flex;
+  fill: white;
+  height: var(--hex-height);
+  justify-content: center;
+  margin: var(--hex-border) 0;
   position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: #2128bd;
-  overflow: hidden;
+  transition: var(--hex-transition);
+  width: var(--hex-width);
 }
 
-.shape {
-  will-change: transform;
-  position: absolute;
-  border-radius: 50%;
-  
-}
-.shape.shape-1 {
-  background: #005ffe;
-  width: 650px;
-  height: 650px;
-  margin: -325px 0 0 -325px;
-}
-
-.shape.shape-2 {
-  background: #ffe5e3;
-  width: 440px;
-  height: 440px;
-  margin: -220px 0 0 -220px;
-}
-
-.shape.shape-3 {
-  background: #ffcc57;
-  width: 270px;
-  height: 270px;
-  margin: -135px 0 0 -135px;
-}
-
-.content {
-  top: 0;
+.hexagon::after,
+.hexagon::before {
+  border-left: var(--hex-margin) solid transparent;
+  border-right: var(--hex-margin) solid transparent;
+  content: "";
   left: 0;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: #fff;
-  mix-blend-mode: screen;
+  transition: var(--hex-transition);
+  width: 0;
 }
 
-h1 {
-  font-size: 100px;
-  font-weight: 200;
-  color: #000;
-  margin: 0;
-  text-align: center;
+.hexagon::after {
+  border-top: var(--hex-border) solid var(--color-hex-default);
+  top: 100%;
+  width: 0;
 }
 
-.cursor {
-  position: fixed;
-  background: #2128bd;
-  width: 20px;
-  height: 20px;
-  margin: -10px 0 0 -10px;
-  border-radius: 50%;
-  will-change: transform;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
+.hexagon::before {
+  border-bottom: var(--hex-border) solid var(--color-hex-default);
+  bottom: 100%;
 }
 
-::selection {
-  color: #fff;
-  background: #2128bd;
+.hexagon:hover {
+  background-color: var(--color-hex-hover);
+}
+
+.hexagon:hover::after,
+.hexagon:hover::before {
+  border-top-color: var(--color-hex-hover);
+  border-bottom-color: var(--color-hex-hover);
+}
+
+.hexagon:nth-child(8n + 5),
+.hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 7),
+.hexagon:nth-child(8n + 8) {
+  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
+.hexagon > svg {
+  height: 75%;
+  transition: var(--hex-transition);
+}
+
+/* Colors */
+.color-sass {
+  background-color: var(--color-sass);
+}
+
+.color-sass::after,
+.color-sass::before {
+  border-top-color: var(--color-sass);
+  border-bottom-color: var(--color-sass);
+}
+
+.color-sass:hover {
+  fill: var(--color-sass);
+}
+
+.color-angular {
+  background-color: var(--color-angular);
+}
+
+.color-angular::after,
+.color-angular::before {
+  border-top-color: var(--color-angular);
+  border-bottom-color: var(--color-angular);
+}
+
+.color-angular:hover {
+  fill: var(--color-angular);
+}
+
+.color-springboot {
+  background-color: var(--color-springboot);
+} 
+
+.color-springboot::after,
+.color-springboot::before {
+  border-top-color: var(--color-springboot);
+  border-bottom-color: var(--color-springboot);
+}
+
+.color-springboot:hover {
+  fill: var(--color-springboot);
+}
+
+.color-rails {
+  background-color: var(--color-rails);
+}
+
+.color-rails::after,
+.color-rails::before {
+  border-top-color: var(--color-rails);
+  border-bottom-color: var(--color-rails);
+}
+
+.color-rails:hover {
+  fill: var(--color-rails);
+}
+
+.color-git {
+  background-color: var(--color-git);
+}
+
+.color-git::after,
+.color-git::before {
+  border-top-color: var(--color-git);
+  border-bottom-color: var(--color-git);
+}
+
+.color-git:hover {
+  fill: var(--color-git);
+}
+
+.color-html {
+  background-color: var(--color-html);
+}
+
+.color-html::after,
+.color-html::before {
+  border-top-color: var(--color-html);
+  border-bottom-color: var(--color-html);
+}
+
+.color-html:hover {
+  fill: var(--color-html);
+}
+
+.color-javascript {
+  background-color: var(--color-javascript);
+}
+
+.color-javascript::after,
+.color-javascript::before {
+  border-top-color: var(--color-javascript);
+  border-bottom-color: var(--color-javascript);
+}
+
+.color-javascript:hover {
+  fill: var(--color-javascript);
+}
+
+.color-java {
+  background-color: var(--color-java);
+}
+
+.color-java::after,
+.color-java::before {
+  border-top-color: var(--color-java);
+  border-bottom-color: var(--color-java);
+}
+
+.color-java:hover {
+  fill: var(--color-java);
+}
+
+.color-circleci {
+  background-color: var(--color-circleci);
+}
+
+.color-circleci::after,
+.color-circleci::before {
+  border-top-color: var(--color-circleci);
+  border-bottom-color: var(--color-circleci);
+}
+
+.color-circleci:hover {
+  fill: var(--color-circleci);
+}
+
+.color-webpack {
+  background-color: var(--color-webpack);
+}
+
+.color-webpack::after,
+.color-webpack::before {
+  border-top-color: var(--color-webpack);
+  border-bottom-color: var(--color-webpack);
+}
+
+.color-webpack:hover {
+  fill: var(--color-webpack);
+}
+
+.color-css {
+  background-color: var(--color-css);
+}
+
+.color-css::after,
+.color-css::before {
+  border-top-color: var(--color-css);
+  border-bottom-color: var(--color-css);
+}
+
+.color-css:hover {
+  fill: var(--color-css);
+}
+
+.color-python {
+  background-color: var(--color-python);
+}
+
+.color-python::after,
+.color-python::before {
+  border-top-color: var(--color-python);
+  border-bottom-color: var(--color-python);
+}
+
+.color-python:hover {
+  fill: var(--color-python);
+}
+
+.color-haskell {
+  background-color: var(--color-haskell);
+}
+
+.color-haskell::after,
+.color-haskell::before {
+  border-top-color: var(--color-haskell);
+  border-bottom-color: var(--color-haskell);
+}
+
+.color-haskell:hover {
+  fill: var(--color-haskell);
+}
+
+.color-bootstrap {
+  background-color: var(--color-bootstrap);
+}
+
+.color-bootstrap::after,
+.color-bootstrap::before {
+  border-top-color: var(--color-bootstrap);
+  border-bottom-color: var(--color-bootstrap);
+}
+
+.color-bootstrap:hover {
+  fill: var(--color-bootstrap);
+}
+
+.color-atom {
+  background-color: var(--color-atom);
+}
+
+.color-atom::after,
+.color-atom::before {
+  border-top-color: var(--color-atom);
+  border-bottom-color: var(--color-atom);
+}
+
+.color-atom:hover {
+  fill: var(--color-atom);
+}
+
+.color-github {
+  background-color: var(--color-github);
+}
+
+.color-github::after,
+.color-github::before {
+  border-top-color: var(--color-github);
+  border-bottom-color: var(--color-github);
+}
+
+.color-github:hover {
+  fill: var(--color-github);
 }
