@@ -143,20 +143,19 @@
   --color-hex-default: #000000;
   --color-hex-hover:   #FFFFFF;
   --color-angular:     #DD0031;
-  --color-atom:        #66595C;
+  --color-typescript:  #007ACC;
   --color-bootstrap:   #563D7C;
   --color-circleci:    #343434;
   --color-css:         #1572B6;
   --color-git:         #F14E32;
-  --color-springboot:  #614c86;
+  --color-springboot:  #a30707;
   --color-haskell:     #5D4F85;
   --color-html:        #E34F26;
   --color-javascript:  #F7DF1E;
   --color-github:      #f56a51;
   --color-python:      #3776AB;
-  --color-rails:       #CC0000;
+  --color-react:       #4f53c0;
   --color-sass:        #CC6699;
-  --color-vuejs:       #4FC08D;
   --color-java:     #343434;
 }
 
@@ -271,18 +270,18 @@
   fill: var(--color-springboot);
 }
 
-.color-rails {
-  background-color: var(--color-rails);
+.color-react {
+  background-color: var(--color-react);
 }
 
-.color-rails::after,
-.color-rails::before {
-  border-top-color: var(--color-rails);
-  border-bottom-color: var(--color-rails);
+.color-react::after,
+.color-react::before {
+  border-top-color: var(--color-react);
+  border-bottom-color: var(--color-react);
 }
 
-.color-rails:hover {
-  fill: var(--color-rails);
+.color-react:hover {
+  fill: var(--color-react);
 }
 
 .color-git {
@@ -425,18 +424,18 @@
   fill: var(--color-bootstrap);
 }
 
-.color-atom {
-  background-color: var(--color-atom);
+.color-typescript {
+  background-color: var(--color-typescript);
 }
 
-.color-atom::after,
-.color-atom::before {
-  border-top-color: var(--color-atom);
-  border-bottom-color: var(--color-atom);
+.color-typescript::after,
+.color-typescript::before {
+  border-top-color: var(--color-typescript);
+  border-bottom-color: var(--color-typescript);
 }
 
-.color-atom:hover {
-  fill: var(--color-atom);
+.color-typescript:hover {
+  fill: var(--color-typescript);
 }
 
 .color-github {
