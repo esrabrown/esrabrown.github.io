@@ -11,11 +11,10 @@ export class HomeComponent implements OnInit {
   message = [
     'web development',
     'traveling',
-    'coding',
-    'java, ...',
+    'java...',
     'good movie and popcorn',
     'javascript, angular, ...',
-    'los aviones, la montaña, soñar',
+    'los aviones, la montaña, la playa',
     'her şey :)'
   ];
   counterS = 0;
