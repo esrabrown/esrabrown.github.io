@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
