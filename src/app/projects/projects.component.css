@@ -10,7 +10,7 @@ body{
   justify-content: center;
   height: 100vh;
   font-family: 'Fira Sans', sans-serif;
-  background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+  background: linear-gradient(147deg,#b2b1af 0%, #888787 74%);
 }
 .blog-card{
   position: absolute;
@@ -20,7 +20,7 @@ body{
   margin: auto;
   border-radius: 25px;
   background: white;
-  box-shadow: 0px 10px 50px rgba(252,56,56,.3);
+  box-shadow: 0px 10px 50px rgba(14, 10, 10, 0.3);
 }
 .inner-part{
   position: absolute;
@@ -40,7 +40,7 @@ body{
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 2px 3px 15px rgba(252,56,56,.1);
+  box-shadow: 2px 3px 15px rgba(24, 24, 24, 0.1);
 }
 #imgTap:checked ~ .inner-part .img{
   height: 370px;
@@ -50,7 +50,8 @@ body{
   transition: .3s .2s ease-in;
 }
 .img img{
-  height: 100%;
+  margin-top: 25px;
+  height: auto;
   width: 100%;
   object-fit: cover;
   cursor: pointer;
