@@ -12,10 +12,17 @@ export class SkillsComponent {
     'Angular',
     'JavaScript',
     'TypeScript',
-    'HTML',
-    'CSS',
+    'React',
+    'HTML-5',
+    'CSS-3',
+    'Bootstrap',
+    'Thymeleaf',
     'MySQL',
-    'Responsive Web Design',
-    'Version Control (Git)'
+    'Python',
+    'IntelliJ',
+    'Visaul Studio Code',
+    'Version Control (GitHub)',
+    'Responsive Web Design'
+    
   ];
 }

@@ -1,6 +1,7 @@
 .body {
- 
   padding: 40px;
+  
+
  }
 
 
@@ -11,6 +12,7 @@
     background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+
   }
   
   h2 {
@@ -145,11 +147,11 @@
   --color-angular:     #DD0031;
   --color-typescript:  #007ACC;
   --color-bootstrap:   #563D7C;
-  --color-circleci:    #343434;
+  --color-vscode:      #ede058;
   --color-css:         #1572B6;
   --color-git:         #F14E32;
   --color-springboot:  #6e2323;
-  --color-haskell:     #5D4F85;
+  --color-mysql:       #a194c4;
   --color-html:        #E34F26;
   --color-javascript:  #F7DF1E;
   --color-github:      #f56a51;
@@ -340,14 +342,14 @@
   fill: var(--color-java);
 }
 
-.color-circleci {
-  background-color: var(--color-circleci);
+.color-mysql {
+  background-color: var(--color-mysql);
 }
 
-.color-circleci::after,
-.color-circleci::before {
-  border-top-color: var(--color-circleci);
-  border-bottom-color: var(--color-circleci);
+.color-mysql::after,
+.color-mysql::before {
+  border-top-color: var(--color-mysql);
+  border-bottom-color: var(--color-mysql);
 }
 
 .color-circleci:hover {
@@ -396,18 +398,18 @@
   fill: var(--color-python);
 }
 
-.color-haskell {
-  background-color: var(--color-haskell);
+.color-vscode {
+  background-color: var(--color-vscode);
 }
 
-.color-haskell::after,
-.color-haskell::before {
-  border-top-color: var(--color-haskell);
-  border-bottom-color: var(--color-haskell);
+.color-vscode::after,
+.color-vscode::before {
+  border-top-color: var(--color-vscode);
+  border-bottom-color: var(--color-vscode);
 }
 
-.color-haskell:hover {
-  fill: var(--color-haskell);
+.color-vscode:hover {
+  fill: var(--color-vscode);
 }
 
 .color-bootstrap {
