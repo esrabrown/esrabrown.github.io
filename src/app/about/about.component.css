@@ -1,5 +1,11 @@
 .body {
-   background-color: whitesmoke; 
+   background-color: #1b1b1b; 
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   transform: translateY(-50px);
+   margin-top: 20px;
+   
   }
 
 .about-container {
@@ -16,19 +22,19 @@
   
   h3 {
     font-size: 20px;
-    color: rgb(214, 145, 16);
+    color: rgb(246, 204, 125);
     margin-top: 30px;
     margin-bottom: 10px;
   }
   
   h4 {
     font-size: 18px;
-    color: black;
+    color: rgb(238, 230, 215);
     margin-bottom: 10px;
   }
   
   p {
-    color: black;
+    color: rgb(238, 230, 215);
     line-height: 1.5;
   }
   
@@ -43,13 +49,14 @@
     padding-left: 20px;
     position: relative;
     margin-bottom: 10px;
+    color: rgb(188, 186, 183);
   }
   
   ul li:before {
     content: "▹";
     position: absolute;
     left: 0;
-    color: #ff6b6b;
+    color: rgb(238, 230, 215);
   }
   
   .education {
@@ -61,13 +68,13 @@
   }
   
   .education p {
-    color: black;
+    color: rgb(188, 186, 183);
     margin-bottom: 5px;
   }
   
   /* Additional styles for a more visually appealing look */
   
-  .about-container {
+  /* .about-container {
     transition: background-color 0.3s, box-shadow 0.3s;
   }
   
@@ -88,7 +95,7 @@
   }
 
   ul li{
-    color: black;
+    color:rgb(238, 230, 215);
   }
 
   ul li:before {
@@ -97,7 +104,7 @@
   
   ul li:last-child {
     margin-bottom: 0;
-  }
+  } */
   
   /* Mobile-friendly styles */
   

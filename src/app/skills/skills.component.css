@@ -1,51 +1,25 @@
 .body {
   padding: 40px;
-  
-
+  background-color: #1b1b1b;
  }
 
-
-.skills-container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-
-  }
-  
-  h2 {
-    font-size: 28px;
+  h1{
     color: #ffcc00;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 20px;
-    color: #555;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  h4 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    color: #666;
-    line-height: 1.5;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+
   }
   
   ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
-    color: #0e0e0e;
+    color: #f4e8e8;
+    text-align: left;
+    justify-content: left;
+
   }
   
+
   ul li {
     padding-left: 20px;
     position: relative;
@@ -97,20 +71,8 @@
       padding: 20px;
     }
   
-    h2 {
+    h1 {
       font-size: 24px;
-    }
-  
-    h3 {
-      font-size: 18px;
-    }
-  
-    h4 {
-      font-size: 16px;
-    }
-    
-    p {
-      font-size: 14px;
     }
   
     ul li:before {
@@ -163,7 +125,6 @@
 
 /* Hexagons */
 .hexagon-container {
-  margin-top: 20%;
   display: grid;
   grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
   grid-auto-rows: calc(var(--hex-width) - 28.87px/2);

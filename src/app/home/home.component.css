@@ -1,14 +1,14 @@
 
-body {
+/* body {
   font-family: Montserrat, sans-serif;
-  font-weight: 900;
+  font-weight: 900; */
   
-  &, * {
+  /* &, * {
     cursor: none;
-  }
-}
+  } */
+/* } */
 
-.shapes {
+/* .shapes {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -41,14 +41,14 @@ body {
   width: 270px;
   height: 270px;
   margin: -135px 0 0 -135px;
-}
+} */
 
-.content {
+/* .content {
   top: 0;
   left: 0;
   position: absolute;
   display: flex;
-  flex-direction: column; /* Added */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -63,10 +63,10 @@ h1 {
   color: #000;
   margin: 0;
   text-align: center;
-}
+} */
 
 
-h1:hover {
+/* h1:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
@@ -92,15 +92,17 @@ h2:hover {
 ::selection {
   color: #fff;
   background: #2128bd;
-}
+} */
 
 .work_img{
   position: absolute;
   display: flex;
   right: 15%;
-  bottom: 0;
+  bottom: 120px;
   max-width: 100%;
   min-height: auto;
+
+
  }
 
  .work_img:hover{
@@ -122,9 +124,10 @@ h2:hover {
 100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* button */
 
-body {
+
+/* body {
+    background-color: #1b1b1b;
   align-items: center;
   background: linear-gradient(
       20deg,
@@ -137,10 +140,14 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-}
+} */
+
+
+/* button */
+
 .buttonContainer {
   position: absolute;
-  bottom: 0;
+  bottom: 80px;
   left: 0;
   height: 174px;
   transform: scale(0.7);
@@ -229,30 +236,34 @@ body {
   fill: #fff;
 }
 
+
+
 /* span - Content2 */
 
 
-
-.content2 span {
+/* 
+.aba span {
   display: inline-block;
   text-align: left;
   font-size: 35px;
-}
+  color: #efefef;
 
+} */
 
-.content2 span .cursor_2 {
+/* 
+ .content2 span .cursor_2 {
 font-size: 35px;
 -webkit-animation: blink 0.7s infinite;
 -moz-animation: blink 0.7s infinite;
 animation: blink 0.7s infinite;
-}
+} 
 
 @media (max-width: 768px) {
   span {
     font-size: 22px;
   }
 
-}
+} 
 
 @keyframes blink {
 0% {opacity: 1;}
@@ -270,4 +281,123 @@ animation: blink 0.7s infinite;
 0% {opacity: 1;}
 50% {opacity: 0;}
 100% {opacity: 1;}
+} */
+
+
+
+section {
+  background-color: #1b1b1b;
+  display: flex;
+  height: 100vh;
+
 }
+
+.title {
+  max-width: 60%;
+  width: 100%;
+  align-self: center;
+  transform: translateX(-100px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.title span {
+  display: inline-block;
+  font-size: 5vw;
+  color: #efefef;
+  width: 100%;
+  text-transform: uppercase;
+  animation: byBottom 1s ease both;
+  font-weight: 600;
+  letter-spacing: 0.25vw;
+  
+}
+
+
+.title span:last-child {
+  font-size: 1rem;
+  animation: byBottom 1s 0.25s ease both;
+}
+
+
+.title span a {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #f7ca18;
+  margin-top: 0;
+  font-size: 1.5rem;
+
+}
+
+
+.title span a::after {
+  content: "";
+  height: 2px;
+  background-color: #f7ca18;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  animation: linkAfter 0.5s 1s ease both;
+} 
+
+body {
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+ 
+}
+::selection {
+  background-color: #f7ca18;
+  color: #1b1b1b;
+}
+
+
+
+.content{
+  align-self: center;
+  justify-content: center;
+  display: inline-block;
+  margin-left: 0.5rem;
+  
+}
+
+
+
+
+
+.content p {
+  display: inline-block;
+  text-align: left;
+  color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  /* margin-left: 0.5rem; */
+  font-size: 1rem;
+  margin-top: 0;
+  letter-spacing: 0.25vw;
+ 
+
+}
+
+
+p.cursor {
+font-size: 20px;
+-webkit-animation: blink 0.7s infinite;
+-moz-animation: blink 0.7s infinite;
+animation: blink 0.7s infinite;
+}
+
+@media (max-width: 768px) {
+  span {
+    font-size: 22px;
+  }
+
+}
+
