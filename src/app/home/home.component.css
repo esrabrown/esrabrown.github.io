@@ -241,5 +241,41 @@ animation: blink 0.7s infinite;
 }
 
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .work_img {
+    bottom: 80px;
+    right: 10%;
+  }
+  .buttonContainer {
+    height: 124px;
+    width: 340px;
+  }
+  .button {
+    font-size: 24px;
+    height: 84px;
+    width: 280px;
+  }
 
+}
 
+/* @media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .work_img {
+    bottom: 60px;
+    right: 5%;
+  }
+  .buttonContainer {
+    height: 100px;
+    width: 100px;
+  }
+  .button {
+    font-size: 20px;
+    height: 70px;
+    width: 100px;
+  }
+} */
