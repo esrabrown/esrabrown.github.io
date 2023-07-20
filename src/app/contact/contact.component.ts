@@ -20,5 +20,16 @@ export class ContactComponent {
       });
     });
   }
+
+  sendEmail(): void {
+    const subject = '';
+    const body = '';
+    const emailAddress = 'esra.brown@ehotmail.com';
+
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+
+
 }
 
