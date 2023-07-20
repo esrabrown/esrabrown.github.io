@@ -115,10 +115,10 @@ body{
   cursor: pointer;
   outline: none;
   border: 1px solid #fbcd6a;
-  background: linear-gradient(147deg,  #f9cf74  0%, #f6b323 74%);
+  background: linear-gradient(147deg,  #f7cc6f  0%,  #eb524a 74%);
 }
 .content button:hover{
-  background: linear-gradient(147deg, #f9a060 0%, #fe791b 74%);
+  background: linear-gradient(147deg, #fb954d 0%, #f8372d  74%);
 }
 .sliders{
   position: absolute;
@@ -150,7 +150,7 @@ body{
   left: 0;
   height: 100%;
   width: -100%;
-  background: linear-gradient(147deg,#f7ca6b 0%, #ffa768  74%);
+  background: linear-gradient(147deg,  #f6ae94 0%,  #fe791b 74%);
   border-radius: 10px;
   transform: scaleX(0);
   transition: transform .6s;
