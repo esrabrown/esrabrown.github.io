@@ -7,9 +7,6 @@ import * as $ from 'jquery'; // Import jQuery
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  email: string = 'mailto:esra.brown@hotmail.com';
-  linkedIn: string = 'https://www.linkedin.com/in/esrabrown';
-  github: string = 'https://github.com/esrabrown';
 
   ngOnInit() {
     // Wait for the DOM to be ready
