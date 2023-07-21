@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery'; // Import jQuery
+
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,29 +7,19 @@ import * as $ from 'jquery'; // Import jQuery
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  isButtonActive = false;
 
-  ngOnInit() {
-    // Wait for the DOM to be ready
-    $(document).ready(() => {
-      // Attach the click event to the button
-      $('button').click(() => {
-        // Toggle the 'active' class on the elements
-        $('button').toggleClass('active');
-        $('.title').toggleClass('active');
-        $('nav').toggleClass('active');
-      });
-    });
+  toggleClasses(): void {
+    this.isButtonActive = !this.isButtonActive;
   }
 
   sendEmail(): void {
     const subject = '';
     const body = '';
-    const emailAddress = 'esra.brown@ehotmail.com';
+    const emailAddress = 'esra.brown@hotmail.com';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   }
-
-
 }
 
