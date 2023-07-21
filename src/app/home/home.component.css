@@ -248,9 +248,10 @@ animation: blink 0.7s infinite;
 
 
   .buttonContainer {
-    max-width: 2vw;
+    max-width: 5%;
     bottom: 100px;
-
+    display: block;
+    justify-content: space-between; 
   }
 
   .button {
@@ -258,12 +259,14 @@ animation: blink 0.7s infinite;
     /* height: 84px;
     width: 280px; */
     max-width: 25vw;
+  
   }
 
   .work_img {
     bottom: 100px;
     right: 20%;
     max-width: 25vw;
+    display: block;
   }
 }
 
