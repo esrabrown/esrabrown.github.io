@@ -166,3 +166,26 @@ input[type="checkbox"]{
   transform: scaleX(1);
   width: 100%;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+  *{
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .content .text {
+    font-size: 15px;
+    overflow: hidden;
+    text-align: justify;
+  }
+
+}
+
+
+
+
+
+
+

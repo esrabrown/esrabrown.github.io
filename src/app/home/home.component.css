@@ -232,50 +232,38 @@ font-size: 20px;
 animation: blink 0.7s infinite;
 }
 
+
+
 @media (max-width: 768px) {
-  span {
-    font-size: 22px;
+  /* Adjustments for smaller screens (e.g., tablets and phones) */
+
+  .title span {
+    font-size: 8vw;
   
   }
 
-}
+  .title span a {
+    font-size: 4vw;
+  }
 
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  .work_img {
-    bottom: 80px;
-    right: 10%;
-  }
   .buttonContainer {
-    height: 124px;
-    width: 340px;
+    max-width: 2vw;
+    bottom: 100px;
+
   }
+
   .button {
     font-size: 24px;
-    height: 84px;
-    width: 280px;
+    /* height: 84px;
+    width: 280px; */
+    max-width: 25vw;
   }
 
+  .work_img {
+    bottom: 100px;
+    right: 20%;
+    max-width: 25vw;
+  }
 }
 
-/* @media (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-  .work_img {
-    bottom: 60px;
-    right: 5%;
-  }
-  .buttonContainer {
-    height: 100px;
-    width: 100px;
-  }
-  .button {
-    font-size: 20px;
-    height: 70px;
-    width: 100px;
-  }
-} */
