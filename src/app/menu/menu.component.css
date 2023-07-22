@@ -352,7 +352,7 @@ nav ul {
 }
 
 /* Styles for medium screens */
-@media (max-width: 768px) {
+@media (max-width: 947px) {
   nav ul {
     width: 100%;
     display: flex;
