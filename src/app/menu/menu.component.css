@@ -100,7 +100,7 @@ header::after {
 .site-nav a {            /* Displays nav links as block for smaller screens */
   color: #f2f2f2;
   display: block;
-  padding: 2em 2em 2em 1.5em;
+  padding: 1em 1em 1em 0.5em;
   text-transform: uppercase;
   text-decoration: none; 
 }

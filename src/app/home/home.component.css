@@ -153,19 +153,21 @@
 
 
 .work_img{
-  position:absolute;
-  display: flex;
-  right: 0;
-  bottom:30px;
+
 
   /* padding: 15px 40px; */
-  /* display: inline-block;
-  position: absolute; */
-  float: right;
-  padding: 0px 40px 10px 10px;
-  bottom: 25%;
+ 
+  /* float: right; */
+  /* padding: 0px 40px 10px 10px; */
+
   margin-top: 20px;
-  /* transform: scale(0.7); */
+  transform: scale(0.7);
+
+  display: inline-block;
+  position: absolute;
+  padding: 12px 36px;
+  margin-top: 20px;
+  right: 0;
   transform-origin: 50% 50%;
   transition: transform 60ms;
   transition: all 0.3s ease;
@@ -248,15 +250,20 @@
   .work_img {
     position: absolute;
     display: flex;
-    top: 30px;
+    top: 20px;
     left: 0;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20%;
     transform-origin: 50% 50%;
     transition: transform 60ms;
     transition: all 0.3s ease;
     max-width: auto;
-    max-height: 30%;
+    max-height: 50%;
+    transform: scale(0.7);
+  }
+  .buttonContainer{
+    bottom: 50px;
+    left: 25px;
   }
 }
 

@@ -116,10 +116,10 @@ body{
   cursor: pointer;
   outline: none;
   border: 1px solid #fbcd6a;
-  background: linear-gradient(147deg,  #f7cc6f  0%,  #eb524a 74%);
+  background: linear-gradient(147deg, #e2fa7a  0%,  #faa125 74%);
 }
 .content button:hover{
-  background: linear-gradient(147deg, #fb954d 0%, #f8372d  74%);
+  background: linear-gradient(147deg, #f8a66b 0%, #ffa01a  74%);
 }
 .sliders{
   position: absolute;
@@ -180,19 +180,13 @@ input[type="checkbox"]{
   }  */
 
   .blog-card {
-    /* height: 300px;
-    width: 90%; */
     transform: translateX(-50%);
     left: 50% !important;
-    top: 205px;
-    width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    max-width: auto !important;
   }
-
 
   .inner-part {
     transform: translateX(-50%);
@@ -201,7 +195,6 @@ input[type="checkbox"]{
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   .inner-part .img {
@@ -212,15 +205,14 @@ input[type="checkbox"]{
   }
 
   .content button{
-    padding: 10px 10px;
+    padding: 12px 12px;
     border: none;
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     color: #fff0e6;
     letter-spacing: 1px;
-    margin: 10px 5px;
+    margin: 15px 5px;
     margin-top: 15px;
-
   }
 
   .content .text{
@@ -233,7 +225,6 @@ input[type="checkbox"]{
     overflow: hidden;
     margin: 0 3px;
     padding: 5px 5px;
-   
   }
 
   .sliders .tap{
@@ -243,7 +234,6 @@ input[type="checkbox"]{
     display: inline-flex;
     margin: 0 3px;
     cursor: pointer;
-    
   }
   
   .content .title{
