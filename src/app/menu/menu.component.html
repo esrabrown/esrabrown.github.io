@@ -1,32 +1,41 @@
-
-
-<!-- <nav class="nav">
-  <a routerLink="/" class="nav-item" active-color="orange">Home</a>
-  <a routerLink="/about" class="nav-item" active-color="green">About</a>
-  <a routerLink="/skills" class="nav-item" active-color="blue">Skills</a>
-  <a routerLink="/projects" class="nav-item" active-color="red">Projects</a>
-  <a routerLink="/contact" class="nav-item" active-color="rebeccapurple">Contact</a>
-  <a href="/assets/resume.pdf" class="nav-item" active-color="rebeccapurple" target="_blank">Resume</a>
-  <span class="nav-indicator"></span>
-</nav> -->
-
-
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  </head>
-  <nav>
-    <ul>
-      <li routerLink="/">Home</li>
-      <li routerLink="/about">About me</li>
-      <li routerLink="/projects">Projects</li>
-      <li routerLink="/skills">Skills</li>
-      <li routerLink="/contact" >Contact me</li>
-      <!-- <li href="#" >Resume</li> -->
-
-      <li class="slide"></li>
-    </ul>
-  </nav>
-
-  <!-- <section>
-    <div class="title"><span>Esra Brown</span><span><a target="_blanck" href="/">Web Developer</a></span></div>
-  </section> -->
+  <header>
+    <div class="container">
+  
+      <h1 class="logo"> <a href="/"> 
+        <span id="logo-first">ESRA</span>
+        <span id="logo-last">BROWN</span></a>
+      </h1>
+  
+      <!-- i elements are for font awesome icons home, info, briefcase, envelope -->
+      <nav class="site-nav" [ngClass]="{'site-nav-open': isMenuOpen}">
+        <ul>
+          <li>
+            <a href="/">
+              <i class="fa fa-home site-nav-icon"></i>Home</a>
+          </li>
+          <li>
+            <a href="/about">
+              <i class="fa fa-info site-nav-icon"></i>About</a>
+          </li>
+          <li>
+            <a href="/projects">
+              <i class="fa fa-briefcase site-nav-icon"></i>Projects</a>
+          </li>
+          <li>
+            <a href="/skills">
+              <i class="fa fa-envelope site-nav-icon"></i>Skills</a>
+          </li>
+          <li> 
+            <a href="/contact">
+              <i class="fa fa-envelope site-nav-icon"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- Menu btn that toggles onClick and changes appearance ( .menu-toggle CSS ) -->
+      <div class="menu-toggle" (click)="onMenuToggleClick()" [ngClass]="{'open': isMenuOpen}">
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </header>
+  

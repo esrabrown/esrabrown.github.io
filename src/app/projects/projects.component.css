@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+ @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 *{
   margin: 0;
   padding: 0;
@@ -101,6 +101,7 @@ body{
   margin-bottom: 30px;
   line-height: 1.5em;
   text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 }
 .content button{
   display: inline-flex;
@@ -167,25 +168,94 @@ input[type="checkbox"]{
   width: 100%;
 }
 
-/* Media Query for Mobile Devices */
+
 @media (max-width: 768px) {
 
-  *{
-    padding: 0;
+  /* *{
+     padding: 0;
     overflow: hidden;
+    overflow-x: scroll;
+    text-align: justify; 
+    
+  }  */
+
+  .blog-card {
+    /* height: 300px;
+    width: 90%; */
+    transform: translateX(-50%);
+    left: 50% !important;
+    top: 205px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
   }
 
-  .content .text {
-    font-size: 15px;
-    overflow: hidden;
+
+  .inner-part {
+    transform: translateX(-50%);
+    left: 50% !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .inner-part .img {
+    margin: 6px 0;
+    padding: 5px 5px;
+    max-width: 35%;
+    max-height: 50%;
+  }
+
+  .content button{
+    padding: 10px 10px;
+    border: none;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #fff0e6;
+    letter-spacing: 1px;
+    margin: 10px 5px;
+    margin-top: 15px;
+
+  }
+
+  .content .text{
+    font-size: 14px;
+    margin-bottom: 45px;
+    line-height: 1.5em;
     text-align: justify;
+    overflow-x: scroll;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 0 3px;
+    padding: 5px 5px;
+   
   }
 
+  .sliders .tap{
+    position: relative;
+    height: 10px;
+    width: 30px;
+    display: inline-flex;
+    margin: 0 3px;
+    cursor: pointer;
+    
+  }
+  
+  .content .title{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+   
+  }
+ 
 }
 
 
 
-
-
-
-
+  

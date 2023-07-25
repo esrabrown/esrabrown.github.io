@@ -21,7 +21,7 @@ import { MenuComponent } from './menu/menu.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
