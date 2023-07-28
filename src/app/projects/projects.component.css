@@ -122,10 +122,10 @@ body{
   cursor: pointer;
   outline: none;
   border: 1px solid #fbcd6a;
-  background: linear-gradient(147deg, #f7ca18 0%,  #f59f26 74%);
+  background: linear-gradient(147deg,#fa7c4e 0%,  #fa7c4e 74%);
 }
 .content button:hover{
-  background: linear-gradient(147deg, #f8a66b 0%, #ffa01a  74%);
+  background: linear-gradient(147deg, #f75e26 0%, #f75e26 74%);
 }
 .sliders{
   position: absolute;
@@ -247,9 +247,7 @@ input[type="checkbox"]{
     margin-top: 0;
     margin-bottom: 15px;
     padding: 5px 5px;
-   
   }
- 
 }
 
 
