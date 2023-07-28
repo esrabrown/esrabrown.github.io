@@ -60,8 +60,8 @@ export class HomeComponent implements OnInit {
   }
 
   sendEmail(): void {
-    const subject = 'Hiring request';
-    const body = 'I\'m interested in hiring you. Please contact me.';
+    const subject = 'Let\'s Work Together';
+    const body = 'I came across your portfolio. I\'m totally interested in hiring you! So, how about we team up and create some magic together? 🔮 Let\'s make unicorns dance, pixels party, and clients rave about our brilliance! 🦄';
     const emailAddress = 'esra.brown@ehotmail.com';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

@@ -25,56 +25,10 @@ body {
     margin-top: 20%;
   }
   
-  /* h3 {
-    font-size: 20px;
-    color: rgb(246, 204, 125);
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  h4 {
-    font-size: 18px;
-    color: rgb(238, 230, 215);
-    margin-bottom: 10px;
-  } */
-  
   p {
     color: rgb(238, 230, 215);
     line-height: 1.5;
   }
-  
-  /* ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  ul li {
-    padding-left: 20px;
-    position: relative;
-    margin-bottom: 10px;
-    color: rgb(188, 186, 183);
-  }
-  
-  ul li:before {
-    content: "▹";
-    position: absolute;
-    left: 0;
-    color: rgb(238, 230, 215);
-  }
-  
-  .education {
-    margin-bottom: 30px;
-  }
-  
-  .education h4 {
-    margin-bottom: 5px;
-  }
-  
-  .education p {
-    color: rgb(188, 186, 183);
-    margin-bottom: 5px;
-  } */
   
   /* Mobile-friendly styles */
   
@@ -87,21 +41,6 @@ body {
       font-size: 24px;
     }
   
-    /* h3 {
-      font-size: 18px;
-    }
-  
-    h4 {
-      font-size: 16px;
-    }
-    
-    p {
-      font-size: 14px;
-    }
-  
-    ul li:before {
-      font-size: 10px;
-    } */
   }
   
   /* Resume button */

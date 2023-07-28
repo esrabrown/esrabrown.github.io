@@ -1,5 +1,7 @@
 
  /* Ensure border-box is used */
+ @import '~@fortawesome/fontawesome-free/css/all.css';
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,16 +16,11 @@ html {
   box-sizing: inherit;
 }
 
-/* Contains Header, Nav, & Logo */
-
 .container {
   width: 95%; 
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* HEADER: Position relative to help... */
-/*    ... poitioning elements absolute  */
 
 header {
   background-color: #0b0b0b;
@@ -97,7 +94,7 @@ header::after {
   border: none;
 }
 
-.site-nav a {            /* Displays nav links as block for smaller screens */
+.site-nav a {
   color: #f2f2f2;
   display: block;
   padding: 1em 1em 1em 0.5em;
@@ -105,26 +102,24 @@ header::after {
   text-decoration: none; 
 }
 
-.site-nav a:hover,         /* hover is for computers and focus is for mobile */
+.site-nav a:hover,
 .site-nav a:focus {
   background:  #f7ca18;
   color: #4d4d4d;
 }
 
-
-/*   ICON styling for smaller screens /////////  */
-
+/* ICON styling for smaller screens */
 
 .site-nav-icon  {
-  display: inline-block;   /* allows margin changes */
+  display: inline-block;
   font-size: 1.5em;
   margin-right: 1em;
-  width: 1em;           /* width lines the icons up */
+  width: 1em; 
   text-align: right;  
   color: rgba(255, 255, 255, .35);  /* white with low opacity to make icons less bright */
 }
 
-/* Acts as btn & contains hamburger     */
+/* Acts as btn & contains hamburger */
 
 .menu-toggle {
   padding: 1em;
@@ -134,7 +129,7 @@ header::after {
   cursor: pointer;
 }
 
-/*   Styles the hamburger for btn       */
+/* Styles the hamburger for btn */
 
 .hamburger,
 .hamburger::before,
@@ -148,47 +143,37 @@ header::after {
   transition: all ease-in-out 500ms;
 }
 
-/* Instance of hamburger (top line)     */
-
 .hamburger::before {
   transform: translateY(-7px);
 }
 
-/* Instance of hamburger bottom line    */
-
 .hamburger::after {
   transform: translateY(4px);
 }
-
-/* When Nav menu is open, hamburger = X */
 
 .open .hamburger {
   transform: rotate(45deg);
   background: #f7e28f;
 }
 
-/* Before hamburger line is invisible   */
-
 .open .hamburger::before {
   opacity: 0;            
 }
-
-/* Animates after line to create an X   */
 
 .open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
   background:  #f7e28f;
 }
 
-/*    For Device (Screens > 700px )     */
+/* For Device (Screens > 700px ) */
 
 @media (min-width:700px) {
 
-  .menu-toggle {       /* Removes hamburger menu */
+  .menu-toggle { 
       display: none;
   }
 
-  .site-nav {         /* Positions site nav & removes background color */
+  .site-nav {
       height: auto;
       position: relative;
       background: transparent;
@@ -196,24 +181,24 @@ header::after {
       font-weight: 300;
   }
 
-  .site-nav li {               /* inline-block and removes border from bottom */
+  .site-nav li {
       display: inline-block;
       border: none;
   }
 
-  .site-nav a {       /* Adds spacing between Nav links */
+  .site-nav a { 
       padding: 0;
       margin-left: 3em;
   }
 
-  .site-nav a:hover,      /* Makes link background transparent on hover */
-  .site-nav a:focus {        /* Changes font color to light blue */
+  .site-nav a:hover,
+  .site-nav a:focus { 
       background: transparent;
       font-weight: 800;
       color:  #f7ca18;
   }
 
-  .site-nav .site-nav-icon {     /* Removes Font Awesome Icons for larger screens */
+  .site-nav .site-nav-icon {
       display: none;
   }
 

@@ -1,6 +1,5 @@
 
  body {
-  /* background-color: #1b1b1b; */
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
@@ -21,7 +20,6 @@
 
 .home {
   align-items: center;
-  /* background-color: #1b1b1b; */
   display: flex;
   height: 100vh;
   color: #fff;
@@ -33,21 +31,7 @@
   text-align: justify;
   margin: 0;
   margin-left: 10%;
-
- 
-  /* margin-bottom: 10rem; */
-  /* padding: 0 11rem; */
-
 }
-
-/* .home .max-width {
-  width: 100%;
-  display: flex;
-}
-
-.home .max-width .row {
-  margin-right: 0;
-} */
 
 .home .home-content .text-1 {
   font-size: 25px;
@@ -161,7 +145,6 @@
   fill: #fff;
 }
 
-
 .work_img{
   opacity: 0.3;
   margin: 0;
@@ -223,19 +206,6 @@
   .max-width {
     max-width: 930px;
   }
-  /* .work_img{ 
-    position: absolute;
-    display: flex;
-    top: 5%;
-    justify-content: center;
-    align-items: center;
-    transform-origin: 50% 50%;
-    transition: transform 60ms;
-    transition: all 0.3s ease;
-    max-width: auto;
-    max-height: 50%;
-    transform: scale(0.6);
- } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -267,19 +237,6 @@
   .max-width {
     max-width: 930px;
   }
-  /* .work_img{ 
-    position: absolute;
-    display: flex;
-    top: 5%;
-    justify-content: center;
-    align-items: center;
-    transform-origin: 50% 50%;
-    transition: transform 60ms;
-    transition: all 0.3s ease;
-    transform: scale(0.6);
-    max-width: auto;
-    max-height: 50%;
- } */
 }
 
 @media (max-width: 690px) {
@@ -303,19 +260,6 @@
   .home .home-content a {
     font-size: 20px;
   }
-  /* .work_img {
-    position: absolute;
-    display: flex;
-    top: 5%;
-    justify-content: center;
-    align-items: center;
-    transform-origin: 50% 50%;
-    transition: transform 60ms;
-    transition: all 0.3s ease;
-    transform: scale(0.6);
-    max-width: auto;
-    max-height: 50%;
-  } */
   .buttonContainer{
     justify-content: center;
     align-items: center;
@@ -330,20 +274,6 @@
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  /* .work_img{
-    position: absolute;
-    display: flex;
-    top: 5%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
-    transform-origin: 50% 50%;
-    transition: transform 60ms;
-    transition: all 0.3s ease;
-    transform: scale(0.6);
-    max-width: auto;
-    max-height: 50%;
-  } */
 }
 
 .bg {
