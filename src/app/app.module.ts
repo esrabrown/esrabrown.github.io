@@ -5,12 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
-
-
 
 
 @NgModule({
@@ -18,7 +15,6 @@ import { MenuComponent } from './menu/menu.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    SkillsComponent,
     ProjectsComponent,
     ContactComponent,
     MenuComponent,
