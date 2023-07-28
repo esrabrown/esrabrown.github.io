@@ -186,6 +186,7 @@
     text-align: justify;
     padding: 0;
     margin: 0;
+    letter-spacing:none;
   }
   .menu-btn i.active:before {
     content: "\f00d";
@@ -203,8 +204,10 @@
     font-size: 23px;
     padding: 10px 30px;
   }
-  .max-width {
-    max-width: 930px;
+  .buttonContainer{
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
   }
 }
 
@@ -220,15 +223,16 @@
     text-align: justify;
     padding: 0;
     margin: 0;
+    letter-spacing:none;
   }
   .home .home-content .text-1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .home .home-content .text-2 {
     font-size: 70px;
   }
   .home .home-content .text-3 {
-    font-size: 13px;
+    font-size: 10px;
   }
   .home .home-content a {
     font-size: 23px;
@@ -236,6 +240,11 @@
   }
   .max-width {
     max-width: 930px;
+  }
+  .buttonContainer{
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
   }
 }
 
@@ -247,15 +256,16 @@
     text-align: justify;
     padding: 0;
     margin: 0;
+    letter-spacing:none;
   }
   .home .home-content .text-1 {
-    font-size: 22px;
+    font-size: 16px;
   }
   .home .home-content .text-2 {
     font-size: 60px;
   }
   .home .home-content .text-3 {
-    font-size: 15px;
+    font-size: 10px;
   }
   .home .home-content a {
     font-size: 20px;
@@ -263,7 +273,7 @@
   .buttonContainer{
     justify-content: center;
     align-items: center;
-    margin-top: 25%;
+    bottom: 0;
   }
 }
 
