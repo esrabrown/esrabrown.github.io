@@ -16,7 +16,7 @@
 }
 
 .home {
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: #1b1b1b;
   display: flex;
@@ -28,6 +28,13 @@
   text-transform: uppercase;
   overflow: hidden;
   text-align: justify;
+  margin: 0;
+  margin-left: 10%;
+
+ 
+  /* margin-bottom: 10rem; */
+  /* padding: 0 11rem; */
+
 }
 
 /* .home .max-width {
@@ -61,13 +68,13 @@
 .buttonContainer {
   display: inline-block;
   position: absolute;
-  padding: 12px 36px;
-  margin-top: 20px;
-  left: 0;
+  padding: 0;
+  margin-top: 5%;
   transform: scale(0.5);
   transform-origin: 50% 50%;
   transition: transform 60ms;
   transition: all 0.3s ease;
+  left: 5%;
 }
 
 .buttonContainer:active {
@@ -83,13 +90,14 @@
     0px 5.1px 5.3px rgba(0, 0, 0, 0.061), 0px 8.8px 10px rgba(0, 0, 0, 0.075),
     0px 15.4px 17.9px rgba(0, 0, 0, 0.089),
     0px 30.6px 33.4px rgba(0, 0, 0, 0.108), 0px 100px 80px rgba(0, 0, 0, 0.15);
-  color: #47515e;
+  color: #303641;
   cursor: pointer;
   font-size: 30px;
   height: 104px;
   left: 50px;
   top: 35px;
   width: 380px;
+  background-color:  #f7ca18;
 }
 .effect {
   position: absolute;
@@ -154,23 +162,39 @@
 
 .work_img{
 
-
+  opacity: 0.3;
   /* padding: 15px 40px; */
  
   /* float: right; */
   /* padding: 0px 40px 10px 10px; */
-
-  margin-top: 20px;
-  transform: scale(0.7);
-
+  margin: 0;
+  bottom: 12%;
+  
+  transform: scale(1.2);
+  
   display: inline-block;
   position: absolute;
-  padding: 12px 36px;
-  margin-top: 20px;
-  right: 0;
+  right: 20%;
   transform-origin: 50% 50%;
   transition: transform 60ms;
   transition: all 0.3s ease;
+  /* border-radius: 50%;
+  display: block;
+  max-height:250px;
+  max-width: 250px;
+  margin: 0 auto 1em;
+  width: 100%;
+  opacity: 0.85;
+  padding-top: 15vh; */
+ 
+  /* margin: 0 auto 40em; */
+
+  /* padding: 0 12rem; */
+
+ 
+
+ 
+  
  }
 
  .work_img:hover{
@@ -220,14 +244,20 @@
     max-width: 930px;
   }
   .work_img{ 
-  position: static;
-  display: block;
-  float: none;
-  padding: 0;
-  margin: 0 auto;
-  transform: none;
-  max-width: 50%;
-  max-height: 200px; 
+   
+    position: absolute;
+    display: flex;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+    transform-origin: 50% 50%;
+    transition: transform 60ms;
+    transition: all 0.3s ease;
+    max-width: auto;
+    max-height: 50%;
+    transform: scale(0.6);
+    margin-right: 15%;
  }
 }
 
@@ -251,19 +281,23 @@
     position: absolute;
     display: flex;
     top: 20px;
-    left: 0;
     justify-content: center;
+    align-items: center;
     margin-top: 20%;
     transform-origin: 50% 50%;
     transition: transform 60ms;
     transition: all 0.3s ease;
     max-width: auto;
     max-height: 50%;
-    transform: scale(0.7);
+    transform: scale(0.6);
+    margin-right: 15%;
   }
   .buttonContainer{
-    bottom: 50px;
-    left: 25px;
+    /* bottom: 50px; 
+    left: 35px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
   }
 }
 
