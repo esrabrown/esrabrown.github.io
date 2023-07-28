@@ -1,5 +1,4 @@
 
- /* Ensure border-box is used */
  @import '~@fortawesome/fontawesome-free/css/all.css';
 
 html {
@@ -27,8 +26,6 @@ header {
   padding: 1em 0;
   position: relative;
 }
-
-/* Allows multiple floats in same element   */
 
 header::after {
   content: '';
@@ -63,8 +60,6 @@ header::after {
   padding-bottom: 20px;
   color: #f2f2f2;
 }
-
-/*  Navigation */
 
 .site-nav {
   position: absolute;
@@ -108,18 +103,14 @@ header::after {
   color: #4d4d4d;
 }
 
-/* ICON styling for smaller screens */
-
 .site-nav-icon  {
   display: inline-block;
   font-size: 1.5em;
   margin-right: 1em;
   width: 1em; 
   text-align: right;  
-  color: rgba(255, 255, 255, .35);  /* white with low opacity to make icons less bright */
+  color: rgba(255, 255, 255, .35);
 }
-
-/* Acts as btn & contains hamburger */
 
 .menu-toggle {
   padding: 1em;
@@ -128,8 +119,6 @@ header::after {
   right: 1em;
   cursor: pointer;
 }
-
-/* Styles the hamburger for btn */
 
 .hamburger,
 .hamburger::before,
@@ -165,14 +154,11 @@ header::after {
   background:  #f7e28f;
 }
 
-/* For Device (Screens > 700px ) */
-
 @media (min-width:700px) {
 
   .menu-toggle { 
       display: none;
   }
-
   .site-nav {
       height: auto;
       position: relative;
@@ -180,24 +166,20 @@ header::after {
       float: right;
       font-weight: 300;
   }
-
   .site-nav li {
       display: inline-block;
       border: none;
   }
-
   .site-nav a { 
       padding: 0;
       margin-left: 3em;
   }
-
   .site-nav a:hover,
   .site-nav a:focus { 
       background: transparent;
       font-weight: 800;
       color:  #f7ca18;
   }
-
   .site-nav .site-nav-icon {
       display: none;
   }
