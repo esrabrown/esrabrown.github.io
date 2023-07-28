@@ -5,12 +5,7 @@
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   overflow: hidden;
-  bottom:0;
-  left:0;
-  position:fixed;
-  right:0;
-  top:0;
-  z-index:-1;
+
 }
 
 ::selection {
@@ -208,6 +203,7 @@
     justify-content: center;
     align-items: center;
     bottom: 0;
+    transform: scale(0.4);
   }
 }
 
@@ -245,6 +241,7 @@
     justify-content: center;
     align-items: center;
     bottom: 0;
+    transform: scale(0.4);
   }
 }
 
@@ -274,15 +271,25 @@
     justify-content: center;
     align-items: center;
     bottom: 0;
+    transform: scale(0.4);
   }
 }
 
 @media (max-width: 500px) {
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 48px;
+  }
+  .home .home-content .text-1 {
+    font-size: 38px;
   }
   .home .home-content .text-3 {
-    font-size: 27px;
+    font-size: 17px;
+  }
+  .buttonContainer{
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    transform: scale(0.4);
   }
 }
 

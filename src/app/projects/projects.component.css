@@ -11,12 +11,6 @@ body{
   height: 100vh;
   font-family: 'Fira Sans', sans-serif;
   background-color: #1b1b1b; 
-  bottom:0;
-  left:0;
-  position:fixed;
-  right:0;
-  top:0;
-  z-index:-1;
 }
 .blog-card{
   position: absolute;
@@ -176,15 +170,6 @@ input[type="checkbox"]{
 
 
 @media (max-width: 768px) {
-
-  /* *{
-     padding: 0;
-    overflow: hidden;
-    overflow-x: scroll;
-    text-align: justify; 
-    
-  }  */
-
   .blog-card {
     transform: translateX(-50%);
     left: 50% !important;
@@ -220,6 +205,9 @@ input[type="checkbox"]{
     margin: 15px 5px;
     margin-top: 15px;
   }
+  .content button:hover{
+    background: none;
+  }
 
   .content .text{
     font-size: 14px;
@@ -240,6 +228,11 @@ input[type="checkbox"]{
     display: inline-flex;
     margin: 0 3px;
     cursor: pointer;
+  }
+
+  .sliders{
+    bottom: 2%;
+    left:80%
   }
   
   .content .title{
