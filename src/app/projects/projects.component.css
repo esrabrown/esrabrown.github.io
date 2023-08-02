@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 *{
   margin: 0;
   padding: 0;
@@ -204,6 +204,7 @@ input[type="checkbox"]{
     margin: 15px 5px;
     margin-top: 15px;
     cursor: pointer;
+    
   }
   .content button:hover{
     background: none;

@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 body {
    background-color: #1b1b1b; 
    margin: 0;
@@ -11,19 +11,20 @@ body {
     margin: 0 auto;
     padding: 60px;
     background-color: #1b1b1b; 
-    font-family: 'Open Sans', sans-serif;
   }
   
   h1 {
     font-size: 28px;
     color: rgb(229, 164, 43);
     margin-bottom: 5%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   p {
     color: rgb(238, 230, 215);
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
   }
   
   /* Resume button */

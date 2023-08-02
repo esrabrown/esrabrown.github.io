@@ -16,8 +16,8 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // Start the timer to change slides every 5 seconds (5000 milliseconds).
-    setInterval(() => this.changeSlide(), 5000);
+    // Start the timer to change slides every 10 seconds (10000 milliseconds).
+    setInterval(() => this.changeSlide(), 10000);
   }
 
   openLink(url: string): void {
