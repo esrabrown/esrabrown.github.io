@@ -25,6 +25,7 @@ header {
   background-color: #0b0b0b;
   padding: 1em 0;
   position: relative;
+  font-family: 'Arial', sans-serif;
 }
 
 header::after {

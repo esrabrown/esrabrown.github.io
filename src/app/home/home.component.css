@@ -5,7 +5,6 @@
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   overflow: hidden;
-
 }
 
 ::selection {
@@ -15,8 +14,8 @@
 
 .home {
   align-items: center;
-  display: flex;
-  height: 100vh;
+  display:flex;
+  height: 90vh;
   color: #fff;
   min-height: 500px;
   font-family: 'Open Sans', sans-serif;
@@ -29,29 +28,30 @@
 }
 
 .home .home-content .text-1 {
-  font-size: 25px;
+  font-size: 20px;
   color: #f7ca18;
   margin-left: 3px;
+  margin-top: 7%;
 }
 
 .home .home-content .text-2 {
-  font-size: 75px;
+  font-size: 55px;
   font-weight: 600;
   margin-left: -3px;
-  margin-bottom: 5px;
 }
 
 .home .home-content .text-3 {
-  font-size: 16px;
+  font-size: 12px;
   margin: 5px 0;
   margin-left: 5px;
+  margin-top: 3px;
 }
 
 .buttonContainer {
   display: inline-block;
   position: absolute;
   padding: 0;
-  margin-top: 3%;
+  margin-top: 5%;
   transform: scale(0.5);
   transform-origin: 50% 50%;
   transition: transform 60ms;
@@ -170,127 +170,6 @@
 80% { transform: translate(-1px, -1px) rotate(1deg); }
 90% { transform: translate(1px, 2px) rotate(0deg); }
 100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-@media (max-width: 947px) {
-  .menu-btn {
-    display: block;
-    z-index: 999;
-  }
-  .home{
-    text-align: justify;
-    padding: 0;
-    margin: 0;
-    letter-spacing:none;
-  }
-  .menu-btn i.active:before {
-    content: "\f00d";
-  }
-  .home .home-content .text-1 {
-    font-size: 18px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-  .home .home-content .text-3 {
-    font-size: 13px;
-  }
-  .home .home-content a {
-    font-size: 23px;
-    padding: 10px 30px;
-  }
-  .buttonContainer{
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    transform: scale(0.4);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .menu-btn {
-    display: block;
-    z-index: 999;
-  }
-  .menu-btn i.active:before {
-    content: "\f00d";
-  }
-  .home{
-    text-align: justify;
-    padding: 0;
-    margin: 0;
-    letter-spacing:none;
-  }
-  .home .home-content .text-1 {
-    font-size: 14px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-  .home .home-content .text-3 {
-    font-size: 9px;
-  }
-  .home .home-content a {
-    font-size: 23px;
-    padding: 10px 30px;
-  }
-  .max-width {
-    max-width: 930px;
-  }
-  .buttonContainer{
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    transform: scale(0.4);
-  }
-}
-
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
-  }
-  .home{
-    text-align: justify;
-    padding: 0;
-    margin: 0;
-    letter-spacing:none;
-  }
-  .home .home-content .text-1 {
-    font-size: 12px;
-  }
-  .home .home-content .text-2 {
-    font-size: 50px;
-  }
-  .home .home-content .text-3 {
-    font-size: 8px;
-  }
-  .home .home-content a {
-    font-size: 20px;
-  }
-  .buttonContainer{
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    transform: scale(0.4);
-  }
-}
-
-@media (max-width: 500px) {
-  .home .home-content .text-2 {
-    font-size: 48px;
-  }
-  .home .home-content .text-1 {
-    font-size: 20px;
-  }
-  .home .home-content .text-3 {
-    font-size: 17px;
-  }
-  .buttonContainer{
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    transform: scale(0.4);
-  }
 }
 
 .bg {

@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     'traveling',
     'java...',
     'good movie and popcorn',
-    'javascript, angular, ...',
+    'javascript, angular...',
     'los aviones, la montaña, la playa',
     'her şey :)'
   ];
@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
   sendEmail(): void {
     const subject = 'Let\'s Work Together';
     const body = 'I came across your portfolio. I\'m totally interested in hiring you! So, how about we team up and create some magic together? 🔮 Let\'s make unicorns dance, pixels party, and clients rave about our brilliance! 🦄';
-    const emailAddress = 'esra.brown@ehotmail.com';
+    const emailAddress = 'esra.brown@hotmail.com';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;

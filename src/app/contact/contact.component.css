@@ -8,7 +8,7 @@
 
 body {
   background-color: #1b1b1b;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 .contact-area {
@@ -64,6 +64,7 @@ body {
   font-weight: 100;
   font-size: 22px;
   margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
 }
 
 .contact main section .content aside p {
@@ -257,6 +258,7 @@ body {
   line-height: 160%;
   letter-spacing: 0.4px;
   color: #000000;
+  margin-bottom: 4px;
 }
 
 .contact nav a .content span {
@@ -264,8 +266,11 @@ body {
   color: darken(#ffffff, 30%);
   display: block;
   letter-spacing: 0.4px;
+  margin-top: 4px;
 }
 
 .contact nav a .content span{
   color: #292f37;
 }
+
+
