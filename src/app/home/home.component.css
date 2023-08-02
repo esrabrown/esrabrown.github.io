@@ -212,7 +212,6 @@
     top:0;
     justify-content: center;
     align-items: center;
-
   }
 
   .work_img:hover{
@@ -220,18 +219,20 @@
   }
 
   .buttonContainer{
-    bottom: 15%;
+    bottom: 10%;
     justify-content: center;
     align-items: center;
-    left: 12%;
   }
 
   .home .home-content .text-1{
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .home .home-content .text-2 {
+    font-size: 35px;
   }
 
   .home .home-content .text-3 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
 }
