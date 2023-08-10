@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -9,7 +9,6 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
-  font-family: 'Fira Sans', sans-serif;
  }
 
 .slider-container {
@@ -165,6 +164,7 @@ body {
   justify-content: center !important;
   align-items: center !important;
   margin-top: 55px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 768px) {

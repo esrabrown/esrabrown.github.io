@@ -1,5 +1,4 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
 
 body {
   background-color: #1b1b1b !important;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
