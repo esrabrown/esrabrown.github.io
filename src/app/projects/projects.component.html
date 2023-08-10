@@ -1,54 +1,33 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Slider Blog Card</title>
-  </head>
-  <body>
-    <div class="blog-card">
-      <input type="radio" name="select" id="tap-1" checked #slide1>
-      <input type="radio" name="select" id="tap-2" #slide2>
-      <input type="radio" name="select" id="tap-3" #slide3>
-      <input type="checkbox" id="imgTap">
-      <div class="sliders">
-        <label for="tap-1" class="tap tap-1"></label>
-        <label for="tap-2" class="tap tap-2"></label>
-        <label for="tap-3" class="tap tap-3"></label>
-      </div>
-<div class="inner-part">
-        <label for="imgTap" class="img">
-          <img class="img-1" src="/assets/first.png" >
-        </label>
-        <div class="content content-1">
-          <div class="title">
-Qlean Quotes</div>
-<div class="text">
-  This full-stack web app for housekeeping is built using Java and Spring Boot, and includes a secure user login with Spring Security, user profiles and quote history, a cost calculation form, and Square integration for payment and invoicing</div>
-  <button (click)="openLink('https://www.qleanquotes.com/authentication/login')" target="_blank">Check it out!</button>
 
+<body> 
+  <div class="slider-container">
+   <div class="slider-container__wrp swiper-wrapper">
+    <div class="slider">
+      <div class="card-content">
+        <div class="slide" *ngFor="let project of projects; let i = index" [class.active]="currentProjectIndex === i">
+          <div class="blog-slider__img">
+          <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+          </div>
+          <div class="blog-slider__content" > 
+          <div class= "blog-slider__title"> {{ project.title }}</div>
+          <div class="blog-slider__text ">{{ project.description }}</div>
+          <a *ngIf="i === 0" [href]="project.link" target="_blank" class="blog-slider__button">Visit Project</a>
+          </div>
         </div>
-</div>
-<div class="inner-part">
-        <label for="imgTap" class="img">
-          <img class="img-2" src="/assets/second.png">
-        </label>
-        <div class="content content-2">
-          <div class="title">
-Tech Jobs</div>
-<div class="text">
-  Created a Java-based web app using Spring Boot and Thymeleaf, allowing users to browse, search, add, and edit tech job listings with implemented ORM functionality using Spring Data.</div>
-        </div>
-</div>
-<div class="inner-part">
-        <label for="imgTap" class="img">
-          <img class="img-3" src="/assets/thirdpic.png">
-        </label>
-        <div class="content content-3">
-          <div class="title">
-Personal Website</div>
- <div class="text">
-  The website you are currently viewing has been developed using Angular and TypeScript.</div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</body>
-</html>
+    <div class="blog-slider__pagination">
+      <span
+        *ngFor="let project of projects; let i = index"
+        [class.active]="currentProjectIndex === i"
+        class="pagination-dot"
+        (click)="goToSlide(i)"
+      ></span>
+    </div>
+    <!-- <div class="arrows">
+      <span (click)="prevProject()" class="arrow left"></span>
+      <span (click)="nextProject()" class="arrow right"></span>
+    </div> -->
+  </div>
+</body> 

@@ -1,43 +1,53 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
+
+interface Project {
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
-  @ViewChild('slide1') slide1!: ElementRef<HTMLInputElement>;
-  @ViewChild('slide2') slide2!: ElementRef<HTMLInputElement>;
-  @ViewChild('slide3') slide3!: ElementRef<HTMLInputElement>;
+export class ProjectsComponent {
+  projects: Project[] = [
+    {
+      image: 'assets/first.png',
+      title: 'Qlean Quotes',
+      description: '  This full-stack web app for housekeeping is built using Java and Spring Boot, and includes a secure user login with Spring Security, user profiles and quote history, a cost calculation form, and Square integration for payment and invoicing.',
+      link: 'https://www.qleanquotes.com/authentication/login'
+    },
+    {
+      image: 'assets/second.png',
+      title: 'Tech Jobs',
+      description: '  Created a Java-based web app using Spring Boot and Thymeleaf, allowing users to browse, search, add, and edit tech job listings with implemented ORM functionality using Spring Data.',
+      link: 'https://example.com/project2'
+    },
+    {
+      image: 'assets/thirdpic.png',
+      title: 'Personal Website',
+      description: '  The website you are currently viewing has been developed using Angular and TypeScript.',
+      link: 'https://example.com/project3'
+    },
+  
+  ];
 
-  currentSlideIndex: number = 0;
-  slideCount: number = 3; // Total number of slides
 
-  constructor() { }
+  currentProjectIndex = 0;
 
-  ngOnInit(): void {
-    // Start the timer to change slides every 10 seconds (10000 milliseconds).
-    setInterval(() => this.changeSlide(), 10000);
+  prevProject(): void {
+    this.currentProjectIndex = (this.currentProjectIndex - 1 + this.projects.length) % this.projects.length;
   }
 
-  openLink(url: string): void {
-    window.open(url, '_blank');
+  nextProject(): void {
+    this.currentProjectIndex = (this.currentProjectIndex + 1) % this.projects.length;
   }
 
-  changeSlide(): void {
-    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slideCount;
-    switch (this.currentSlideIndex) {
-      case 0:
-        this.slide1.nativeElement.checked = true;
-        break;
-      case 1:
-        this.slide2.nativeElement.checked = true;
-        break;
-      case 2:
-        this.slide3.nativeElement.checked = true;
-        break;
-      default:
-        break;
-    }
+  goToSlide(index: number): void {
+    this.currentProjectIndex = index;
   }
 }
+
