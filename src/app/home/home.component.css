@@ -56,7 +56,7 @@
   transform-origin: 50% 50%;
   transition: transform 60ms;
   transition: all 0.3s ease;
-  left: 0;
+  left: 5%;
 }
 
 .buttonContainer:active {
@@ -173,7 +173,7 @@
 @media (max-width: 768px) {
   .buttonContainer{
     bottom: 12%;
-    transform: scale(0.5);
+    transform: scale(0.4);
     margin-left: 0;
   }
   .home {
