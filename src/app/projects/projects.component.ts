@@ -37,6 +37,18 @@ export class ProjectsComponent {
 
 
   currentProjectIndex = 0;
+  private timer: any;
+
+  ngOnInit() {
+    this.startSlideTimer();
+  }
+
+  startSlideTimer() {
+    this.timer = setInterval(() => {
+      this.nextProject();
+    }, 5000);
+  }
+
 
   prevProject(): void {
     this.currentProjectIndex = (this.currentProjectIndex - 1 + this.projects.length) % this.projects.length;
