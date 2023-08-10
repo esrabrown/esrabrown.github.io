@@ -46,7 +46,7 @@ export class ProjectsComponent {
   startSlideTimer() {
     this.timer = setInterval(() => {
       this.nextProject();
-    }, 5000);
+    }, 8000);
   }
 
 
