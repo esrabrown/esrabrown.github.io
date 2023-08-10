@@ -35,7 +35,6 @@ export class ProjectsComponent {
   
   ];
 
-
   currentProjectIndex = 0;
   private timer: any;
 
@@ -48,7 +47,6 @@ export class ProjectsComponent {
       this.nextProject();
     }, 8000);
   }
-
 
   prevProject(): void {
     this.currentProjectIndex = (this.currentProjectIndex - 1 + this.projects.length) % this.projects.length;
