@@ -56,7 +56,7 @@
   transform-origin: 50% 50%;
   transition: transform 60ms;
   transition: all 0.3s ease;
-  left: 5%;
+  left: 0;
 }
 
 .buttonContainer:active {
@@ -140,40 +140,6 @@
   fill: #fff;
 }
 
-/* .work_img{
-  margin: 0;
-  bottom: 20%;
-  transform: scale(0.9);
-  /* display: inline-block; */
-  /* position: absolute;
-  right: 22%;
-  transform-origin: 50% 50%;
-  transition: transform 60ms;
-  transition: all 0.3s ease;
-  float: right;
-  padding: 0px 40px 10px 10px;
-} */
- 
-
- .work_img:hover{
-  animation: shake 0.5s; 
-  animation-iteration-count: infinite;
- }
-
- @keyframes shake {
-0% { transform: translate(1px, 1px) rotate(0deg); }
-10% { transform: translate(-1px, -2px) rotate(-1deg); }
-20% { transform: translate(-3px, 0px) rotate(1deg); }
-30% { transform: translate(3px, 2px) rotate(0deg); }
-40% { transform: translate(1px, -1px) rotate(1deg); }
-50% { transform: translate(-1px, 2px) rotate(-1deg); }
-60% { transform: translate(-3px, 1px) rotate(0deg); }
-70% { transform: translate(3px, 1px) rotate(-1deg); }
-80% { transform: translate(-1px, -1px) rotate(1deg); }
-90% { transform: translate(1px, 2px) rotate(0deg); }
-100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, rgb(6, 6, 6) 50%, #1b1b1b 50%);
@@ -204,25 +170,11 @@
   }
 }
 
-
 @media (max-width: 768px) {
-
-  /* .work_img{
-    transform: scale(0.6);
-    top:0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .work_img:hover{
-    animation: none;
-  } */
-  
   .buttonContainer{
     bottom: 12%;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.4);
+    transform: scale(0.5);
+    margin-left: 0;
   }
   .home {
     align-items: center;
@@ -232,7 +184,6 @@
     text-align: justify;
     margin-left: 10%;
   }
-  
   .home .home-content .text-1{
     font-size: 16px;
   }
@@ -244,11 +195,3 @@
     font-size: 10px;
   }
 }
-/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .work_img{
-    float: right;
-    padding: 0px 40px 10px 10px;
-    transform: scale(0.7);
-    right: 5%;
-   }
-} */
