@@ -172,9 +172,8 @@
 
 @media (max-width: 768px) {
   .buttonContainer{
-    bottom: 12%;
-    transform: scale(0.4);
-    margin-left: 0;
+    margin-top: 8%;
+    transform: scale(0.4); 
   }
   .home {
     align-items: center;
