@@ -157,6 +157,7 @@ body {
   line-height: 1.5em;
   word-wrap: break-word;
   text-align: justify;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .blog-slider__title{
@@ -191,15 +192,18 @@ body {
 
 .pagination-dot {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
+  width: 17px;
+  height: 17px;
+  margin: 0 6px;
   border-radius: 50%;
   background-color: #ccc;
   cursor: pointer;
   right: 15 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .slider-container .pagination-dot.active {
   background-color: #fe8a39;
+  opacity: 1;
+  transform: scale(1.2);
 }
