@@ -23,7 +23,7 @@ export class ProjectsComponent {
     {
       image: 'assets/second.png',
       title: 'Tech Jobs',
-      description: '  Engineered a robust web application facilitating effortless browsing, searching, addition, and editing of tech job listings. Developed using Java, Spring Boot, and Thymeleaf, meticulously adhering to the Model-View-Controller (MVC) architecture.',
+      description: '  Engineered a robust web application facilitating effortless browsing, searching, addition, and editing of tech job listings. Developed using Java, Spring Boot, and Thymeleaf and MySQL, while meticulously adhering to the Model-View-Controller (MVC) architecture',
       link: 'https://example.com/project2'
     },
     {
