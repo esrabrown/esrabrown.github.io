@@ -17,7 +17,7 @@ export class ProjectsComponent {
     {
       image: 'assets/first.png',
       title: 'Qlean Quotes',
-      description: '  This full-stack web app for housekeeping is built using Java and Spring Boot, and includes a secure user login with Spring Security, user profiles and quote history, a cost calculation form, and Square integration for payment and invoicing.',
+      description: '  This full-stack web app for housekeeping is built using Java and Spring Boot, MySQL, JavaScript, Thymeleaf, CSS, Bootstrap, and includes a secure user login with Spring Security, user profiles and quote history, a cost calculation form, and Square integration for payment and invoicing.',
       link: 'https://www.qleanquotes.com/authentication/login'
     },
     {
