@@ -23,13 +23,13 @@ export class ProjectsComponent {
     {
       image: 'assets/second.png',
       title: 'Tech Jobs',
-      description: '  Created a Java-based web app using Spring Boot and Thymeleaf, allowing users to browse, search, add, and edit tech job listings with implemented ORM functionality using Spring Data.',
+      description: '  Engineered a robust web application facilitating effortless browsing, searching, addition, and editing of tech job listings. Developed using Java, Spring Boot, and Thymeleaf, meticulously adhering to the Model-View-Controller (MVC) architecture.',
       link: 'https://example.com/project2'
     },
     {
       image: 'assets/thirdpic.png',
       title: 'Personal Website',
-      description: '  The website you are currently viewing has been developed using Angular and TypeScript.',
+      description: "You are currently exploring the website I've created, a dynamic personal platform skillfully crafted with Angular, TypeScript, HTML, and CSS. This digital space encapsulates my journey and demonstrates my prowess in the field of Software Engineering.",
       link: 'https://example.com/project3'
     },
   

@@ -51,12 +51,11 @@
   display: inline-block;
   position: absolute;
   padding: 0;
-  margin-top: 5%;
+  margin-top: 3%;
   transform: scale(0.5);
   transform-origin: 50% 50%;
-  transition: transform 60ms;
-  transition: all 0.3s ease;
-  left: 5%;
+  transition: transform 60ms, all 0.3s ease;
+  left: 4%;
 }
 
 .buttonContainer:active {
@@ -172,8 +171,10 @@
 
 @media (max-width: 768px) {
   .buttonContainer{
-    margin-top: 8%;
+    margin-top: 4%;
     transform: scale(0.4); 
+    left: -70px;
+    
   }
   .home {
     align-items: center;
