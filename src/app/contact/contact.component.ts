@@ -16,7 +16,7 @@ export class ContactComponent {
   sendEmail(): void {
     const subject = '';
     const body = '';
-    const emailAddress = 'esra.brown@hotmail.com';
+    const emailAddress = 'esrabrown@outlook.com';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
